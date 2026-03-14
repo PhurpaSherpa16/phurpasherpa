@@ -5,6 +5,7 @@ import { errorHandler, urlNotFound } from "./middleware/errorHandler.js"
 import projectRoutes from './routes/routes.js'
 
 const app = express()
+
 app.use(cors())
 
 app.use('/projects', projectRoutes)
